@@ -22,7 +22,7 @@ if exists("syntax_on")
 	  hi StatusLineNC ctermfg=15 ctermbg=241 cterm=NONE guifg=#ffffff guibg=#626262 gui=NONE
 	  hi Pmenu ctermfg=39 ctermbg=NONE cterm=bold guifg=#029fff guibg=NONE gui=bold
 	  hi PmenuSel ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3f3f3f gui=NONE
-	  hi IncSearch ctermfg=0 ctermbg=255 cterm=NONE guifg=#00000#000000 guibg=#ffffff gui=NONE
+	  hi IncSearch ctermfg=0 ctermbg=255 cterm=NONE guifg=#000000 guibg=#ffffff gui=NONE
 	  hi Search ctermfg=0 ctermbg=255 cterm=NONE guifg=#000000 guibg=#ffffff gui=NONE
 	  hi Directory ctermfg=39 ctermbg=NONE cterm=NONE guifg=#029fff guibg=NONE gui=NONE
 	  hi Folded ctermfg=101 ctermbg=235 cterm=NONE guifg=#978d53 guibg=#222222 gui=NONE
