@@ -101,21 +101,17 @@ if exists("syntax_on")
 	  hi cssValueLength ctermfg=25 ctermbg=NONE cterm=NONE guifg=#0061b9 guibg=NONE gui=NONE
 	  hi cssCommonAttr ctermfg=66 ctermbg=NONE cterm=bold guifg=#307791 guibg=NONE gui=bold
 	  hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-      hi IndentGuidesEven ctermbg=236 guibg=236
-      hi IndentGuidesOdd ctermbg=236 guibg=236
-      hi clear SpellBad
-      hi SpellBad cterm=underline
 
+    hi IndentGuidesEven ctermbg=236 guibg=236
+    hi IndentGuidesOdd ctermbg=236 guibg=236
+    hi clear SpellBad
+    hi SpellBad cterm=underline
 
-  " highlight lines in Sy and vimdiff etc.)
+    hi DiffAdd           cterm=bold ctermbg=none ctermfg=119
+    hi DiffDelete        cterm=bold ctermbg=none ctermfg=167
+    hi DiffChange        cterm=bold ctermbg=none ctermfg=227
 
-  highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
-  highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
-  highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
-
-  " highlight signs in Sy
-
-  highlight SignifySignAdd    cterm=bold ctermbg=119  ctermfg=233
-  highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
-  highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
+    hi SignifySignAdd    cterm=bold ctermbg=NONE  ctermfg=119
+    hi SignifySignDelete cterm=bold ctermbg=NONE  ctermfg=167
+    hi SignifySignChange cterm=bold ctermbg=NONE  ctermfg=227
 
