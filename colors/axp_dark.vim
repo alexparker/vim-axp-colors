@@ -115,7 +115,7 @@ if exists("syntax_on")
 
   " highlight signs in Sy
 
-  highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
+  highlight SignifySignAdd    cterm=bold ctermbg=119  ctermfg=233
   highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
   highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
 
