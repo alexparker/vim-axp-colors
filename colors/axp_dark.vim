@@ -12,7 +12,7 @@ if exists("syntax_on")
 
 	  hi Cursor ctermfg=NONE ctermbg=15 cterm=NONE guifg=NONE guibg=#ffffff gui=NONE
 	  hi Visual ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3f3f3f gui=NONE
-	  hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#383838 gui=NONE
+	  hi CursorLine ctermfg=NONE ctermbg=0 cterm=NONE guifg=NONE guibg=#383838 gui=NONE
 	  hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#383838 gui=NONE
 	  hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#383838 gui=NONE
 	  hi LineNr ctermfg=246 ctermbg=237 cterm=NONE guifg=#919191 guibg=#383838 gui=NONE
@@ -106,7 +106,16 @@ if exists("syntax_on")
       hi clear SpellBad
       hi SpellBad cterm=underline
 
-      hi GitGutterAdd ctermbg=36 guibg=#009900
-      hi GitGutterChange ctermbg=101 guibg=#ff7f00
-      hi GitGutterDelete ctermbg=203 guibg=#dd0000
-      hi GitGutterChangeDelete ctermbg=39 guibg=#0033dd
+
+  " highlight lines in Sy and vimdiff etc.)
+
+  highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
+  highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
+  highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
+
+  " highlight signs in Sy
+
+  highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
+  highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
+  highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
+
