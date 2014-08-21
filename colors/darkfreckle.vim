@@ -30,12 +30,12 @@ hi Folded ctermfg=102 ctermbg=234 cterm=NONE guifg=#797c74 guibg=#1e1e1e gui=NON
 hi Normal ctermfg=231 ctermbg=234 cterm=NONE guifg=#f5f5f5 guibg=#1e1e1e gui=NONE
 hi Boolean ctermfg=74 ctermbg=NONE cterm=NONE guifg=#34b9d6 guibg=NONE gui=NONE
 hi Character ctermfg=67 ctermbg=234 cterm=NONE guifg=#3592a8 guibg=#1e1e1e gui=NONE
-hi Comment ctermfg=102 ctermbg=233 cterm=NONE guifg=#797c74 guibg=NONE gui=italic
+hi Comment ctermfg=238 ctermbg=233 cterm=NONE guifg=#444444 guibg=#121212 gui=italic
 hi Conditional ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Constant ctermfg=67 ctermbg=234 cterm=NONE guifg=#3592a8 guibg=#1e1e1e gui=NONE
 hi Define ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#f5f5f5 guibg=#44810b gui=bold
-hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#890606 guibg=NONE gui=NONE
+hi DiffDelete ctermfg=124 ctermbg=NONE cterm=NONE guifg=#af0000 guibg=NONE gui=NONE
 hi DiffChange ctermfg=231 ctermbg=23 cterm=NONE guifg=#f5f5f5 guibg=#1f3453 gui=NONE
 hi DiffText ctermfg=231 ctermbg=24 cterm=bold guifg=#f5f5f5 guibg=#204a87 gui=bold
 hi ErrorMsg ctermfg=254 ctermbg=197 cterm=NONE guifg=#e5e5e5 guibg=#fc1768 gui=NONE
