@@ -12,7 +12,7 @@ let g:colors_name = "darkfreckle"
 
 hi Cursor ctermfg=234 ctermbg=67 cterm=NONE guifg=#1e1e1e guibg=#3592a8 gui=NONE
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#416269 gui=NONE
-hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
+hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#333333 gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#333333 gui=NONE
 hi LineNr ctermfg=245 ctermbg=236 cterm=NONE guifg=#8a8a8a guibg=#333333 gui=NONE
@@ -30,7 +30,7 @@ hi Folded ctermfg=102 ctermbg=234 cterm=NONE guifg=#797c74 guibg=#1e1e1e gui=NON
 hi Normal ctermfg=231 ctermbg=234 cterm=NONE guifg=#f5f5f5 guibg=#1e1e1e gui=NONE
 hi Boolean ctermfg=74 ctermbg=NONE cterm=NONE guifg=#34b9d6 guibg=NONE gui=NONE
 hi Character ctermfg=67 ctermbg=234 cterm=NONE guifg=#3592a8 guibg=#1e1e1e gui=NONE
-hi Comment ctermfg=102 ctermbg=235 cterm=NONE guifg=#797c74 guibg=#222222 gui=italic
+hi Comment ctermfg=102 ctermbg=233 cterm=NONE guifg=#797c74 guibg=NONE gui=italic
 hi Conditional ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Constant ctermfg=67 ctermbg=234 cterm=NONE guifg=#3592a8 guibg=#1e1e1e gui=NONE
 hi Define ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
@@ -105,3 +105,8 @@ hi cssClassName ctermfg=74 ctermbg=NONE cterm=NONE guifg=#34b9d6 guibg=NONE gui=
 hi cssValueLength ctermfg=254 ctermbg=NONE cterm=NONE guifg=#e5e5e5 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=106 ctermbg=NONE cterm=NONE guifg=#7abc08 guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
+hi IndentGuidesEven ctermbg=235 guibg=236
+hi IndentGuidesOdd ctermbg=236 guibg=236
+hi clear SpellBad
+hi SpellBad cterm=underline
