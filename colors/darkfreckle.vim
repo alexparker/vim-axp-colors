@@ -106,7 +106,7 @@ hi cssValueLength ctermfg=254 ctermbg=NONE cterm=NONE guifg=#e5e5e5 guibg=NONE g
 hi cssCommonAttr ctermfg=106 ctermbg=NONE cterm=NONE guifg=#7abc08 guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
-hi IndentGuidesEven ctermbg=235 guibg=236
-hi IndentGuidesOdd ctermbg=236 guibg=236
+hi IndentGuidesEven ctermbg=235 guibg=235
+hi IndentGuidesOdd ctermbg=235 guibg=235
 hi clear SpellBad
 hi SpellBad cterm=underline
