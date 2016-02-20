@@ -31,6 +31,7 @@ let presets.variable = Syntax({'fg': '099'})
 let presets.string = Syntax({'fg': '149'})
 let presets.type = Syntax({'fg': '030'})
 let presets.statement = Syntax({'fg': '214'})
+let presets.number = Syntax({'fg': '074'})
 
 let colors = {
       \'none': 'NONE',
@@ -91,7 +92,8 @@ hi Identifier ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=N
 hi Keyword ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Label ctermfg=149 ctermbg=234 cterm=NONE guifg=#add961 guibg=#1e1e1e gui=NONE
 hi NonText ctermfg=236 ctermbg=235 cterm=NONE guifg=#333333 guibg=#292929 gui=NONE
-hi Number ctermfg=254 ctermbg=NONE cterm=NONE guifg=#e5e5e5 guibg=NONE gui=NONE
+"hi Number ctermfg=254 ctermbg=NONE cterm=NONE guifg=#e5e5e5 guibg=NONE gui=NONE
+let syntax.Number = copy(presets.number)
 hi Operator ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi PreProc ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f5f5f5 guibg=NONE gui=NONE
