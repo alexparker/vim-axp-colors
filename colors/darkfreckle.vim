@@ -53,6 +53,7 @@ hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#416269 gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=237 cterm=none guifg=NONE guibg=NONE gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#333333 gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#333333 gui=NONE
+hi clear SignColumn
 hi LineNr ctermfg=245 ctermbg=236 cterm=NONE guifg=#8a8a8a guibg=#333333 gui=NONE
 hi VertSplit ctermfg=240 ctermbg=240 cterm=NONE guifg=#5c5c5c guibg=#5c5c5c gui=NONE
 hi MatchParen ctermfg=168 ctermbg=NONE cterm=reverse guifg=#e84480 guibg=NONE gui=reverse
@@ -69,7 +70,6 @@ let syntax.NERDTreeDirSlash = copy(presets.comment)
 let syntax.NERDTreeFile = copy(presets.comment)
 
 hi Folded ctermfg=102 ctermbg=234 cterm=NONE guifg=#797c74 guibg=#1e1e1e gui=NONE
-
 hi Normal ctermfg=231 ctermbg=234 cterm=NONE guifg=#f5f5f5 guibg=#1e1e1e gui=NONE
 hi Boolean ctermfg=74 ctermbg=NONE cterm=NONE guifg=#34b9d6 guibg=NONE gui=NONE
 hi Character ctermfg=67 ctermbg=234 cterm=NONE guifg=#3592a8 guibg=#1e1e1e gui=NONE
@@ -77,10 +77,10 @@ hi Comment ctermfg=238 ctermbg=234 cterm=NONE guifg=#444444 guibg=#121212 gui=it
 hi Conditional ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Constant ctermfg=67 ctermbg=234 cterm=NONE guifg=#3592a8 guibg=#1e1e1e gui=NONE
 hi Define ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
-hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#f5f5f5 guibg=#44810b gui=bold
+hi DiffAdd ctermfg=46 ctermbg=NONE cterm=bold guifg=#f5f5f5 guibg=#44810b gui=bold
 hi DiffDelete ctermfg=124 ctermbg=NONE cterm=NONE guifg=#af0000 guibg=NONE gui=NONE
-hi DiffChange ctermfg=231 ctermbg=23 cterm=NONE guifg=#f5f5f5 guibg=#1f3453 gui=NONE
-hi DiffText ctermfg=231 ctermbg=24 cterm=bold guifg=#f5f5f5 guibg=#204a87 gui=bold
+hi DiffChange ctermfg=245 ctermbg=NONE cterm=NONE guifg=#f5f5f5 guibg=#1f3453 gui=NONE
+hi DiffText ctermfg=46 ctermbg=NONE cterm=bold guifg=#f5f5f5 guibg=#204a87 gui=bold
 hi ErrorMsg ctermfg=254 ctermbg=197 cterm=NONE guifg=#e5e5e5 guibg=#fc1768 gui=NONE
 hi WarningMsg ctermfg=254 ctermbg=197 cterm=NONE guifg=#e5e5e5 guibg=#fc1768 gui=NONE
 hi Float ctermfg=254 ctermbg=NONE cterm=NONE guifg=#e5e5e5 guibg=NONE gui=NONE
@@ -184,8 +184,8 @@ hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
 let syntax.Noise  = copy(presets.comment)
 
-hi IndentGuidesEven ctermbg=235 guibg=235
-hi IndentGuidesOdd ctermbg=235 guibg=235
+hi IndentGuidesEven ctermbg=234 guibg=#1e1e1e
+hi IndentGuidesOdd ctermbg=234 guibg=#1e1e1e
 hi clear SpellBad
 hi SpellBad cterm=underline
 
