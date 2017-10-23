@@ -45,7 +45,8 @@ let colors = {
       \'214': '#ffaf00',
       \'231': '#f5f5f5',
       \'234': '#1e1e1e',
-      \'238': '#444444'
+      \'238': '#444444',
+      \'241': '#626262'
       \}
 
 hi Cursor ctermfg=234 ctermbg=67 cterm=NONE guifg=#1e1e1e guibg=#3592a8 gui=NONE
