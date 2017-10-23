@@ -24,7 +24,7 @@ let syntax = {}
 let colors.dark_blue = {'fg': 'darkblue', 'bg': 'none'}
 
 
-let presets.comment =  Syntax({'fg': '238'})
+let presets.comment =  Syntax({'fg': '241'})
 let presets.function = Syntax({'fg': '026'})
 let presets.storage = Syntax({'fg': '099'})
 let presets.variable = Syntax({'fg': '099'})
