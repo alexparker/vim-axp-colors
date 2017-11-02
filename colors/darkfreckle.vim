@@ -25,7 +25,7 @@ let colors.dark_blue = {'fg': 'darkblue', 'bg': 'none'}
 
 
 let presets.comment =  Syntax({'fg': '241'})
-let presets.function = Syntax({'fg': '026'})
+let presets.function = Syntax({'fg': '033'})
 let presets.storage = Syntax({'fg': '099'})
 let presets.variable = Syntax({'fg': '099'})
 let presets.string = Syntax({'fg': '149'})
@@ -36,6 +36,7 @@ let presets.number = Syntax({'fg': '074'})
 let colors = {
       \'none': 'NONE',
       \'026': '#005fd7',
+      \'033': '#005fd7',
       \'030': '#008787',
       \'067': '#5f87af',
       \'074': '#5fafd7',
