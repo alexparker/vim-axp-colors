@@ -186,7 +186,7 @@ hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
 let syntax.Noise  = copy(presets.comment)
 
-hi IndentGuidesEven ctermbg=233 guibg=#1e1e1e
+hi IndentGuidesEven ctermbg=234 guibg=#1e1e1e
 hi IndentGuidesOdd ctermbg=none guibg=#1e1e1e
 hi clear SpellBad
 hi SpellBad cterm=underline
