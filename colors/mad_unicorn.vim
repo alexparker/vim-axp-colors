@@ -1,5 +1,8 @@
 " Vim color file
-" Converted from Textmate theme Freckle using Coloration v0.3.3 (http://github.com/sickill/coloration)
+" Cterm colors:
+"
+" https://d.pr/i/3hs5k7
+"
 
 set background=dark
 highlight clear
@@ -8,7 +11,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "darkfreckle"
+let g:colors_name = "mad_unicorn"
 
 if !exists("*Syntax")
   function Syntax(diction)
@@ -28,10 +31,11 @@ let presets.comment =  Syntax({'fg': '241'})
 let presets.function = Syntax({'fg': '033'})
 let presets.storage = Syntax({'fg': '099'})
 let presets.variable = Syntax({'fg': '099'})
-let presets.string = Syntax({'fg': '149'})
+let presets.string = Syntax({'fg': '155'})
 let presets.type = Syntax({'fg': '030'})
 let presets.statement = Syntax({'fg': '214'})
 let presets.number = Syntax({'fg': '074'})
+let presets.operator = Syntax({'fg': '168'})
 
 let colors = {
       \'none': 'NONE',
@@ -42,13 +46,36 @@ let colors = {
       \'074': '#5fafd7',
       \'099': '#875fff',
       \'149': '#afd75f',
+      \'155': '#afff5f',
       \'168': '#d75f87',
       \'214': '#ffaf00',
       \'231': '#f5f5f5',
       \'234': '#1e1e1e',
       \'238': '#444444',
-      \'241': '#626262'
+      \'241': '#626262',
+      \'129': '#af00ff'
       \}
+
+hi elixirArguments ctermfg=206
+hi elixirAtom ctermfg=99
+hi elixirBlock ctermfg=243
+hi elixirBlockDefinition ctermfg=99
+hi elixirDefine ctermfg=162
+hi elixirFunctionDeclaration ctermfg=33
+hi elixirId ctermfg=254
+hi elixirInclude ctermfg=99
+hi elixirKeyword ctermfg=99
+hi elixirModuleDefine ctermfg=162
+hi elixirOperator ctermfg=162
+hi elixirPrivateDefine ctermfg=235
+hi elixirString ctermfg=155
+hi elixirVariable ctermfg=206
+hi Keyword ctermfg=206
+hi Define ctermfg=208
+hi elixirExUnitAssert ctermfg=160
+hi Identifier ctermfg=206
+hi Statement ctermfg=208
+
 
 hi Cursor ctermfg=234 ctermbg=67 cterm=NONE guifg=#1e1e1e guibg=#3592a8 gui=NONE
 hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#416269 gui=NONE
@@ -58,7 +85,7 @@ hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#333333 gui=
 hi SignColumn ctermbg=234
 hi LineNr ctermfg=245 ctermbg=236 cterm=NONE guifg=#8a8a8a guibg=#333333 gui=NONE
 hi VertSplit ctermfg=240 ctermbg=240 cterm=NONE guifg=#5c5c5c guibg=#5c5c5c gui=NONE
-hi MatchParen ctermfg=168 ctermbg=NONE cterm=reverse guifg=#e84480 guibg=NONE gui=reverse
+hi MatchParen ctermfg=99 ctermbg=NONE cterm=reverse
 hi StatusLine ctermfg=231 ctermbg=240 cterm=bold guifg=#f5f5f5 guibg=#5c5c5c gui=bold
 hi StatusLineNC ctermfg=231 ctermbg=240 cterm=NONE guifg=#f5f5f5 guibg=#5c5c5c gui=NONE
 hi Pmenu ctermfg=74 ctermbg=NONE cterm=NONE guifg=#34b9d6 guibg=NONE gui=NONE
@@ -78,7 +105,6 @@ hi Character ctermfg=67 ctermbg=234 cterm=NONE guifg=#3592a8 guibg=#1e1e1e gui=N
 hi Comment ctermfg=238 ctermbg=234 cterm=NONE guifg=#444444 guibg=#121212 gui=italic
 hi Conditional ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Constant ctermfg=67 ctermbg=234 cterm=NONE guifg=#3592a8 guibg=#1e1e1e gui=NONE
-hi Define ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi DiffAdd ctermfg=46 ctermbg=NONE cterm=bold guifg=#f5f5f5 guibg=#44810b gui=bold
 hi DiffDelete ctermfg=124 ctermbg=NONE cterm=NONE guifg=#af0000 guibg=NONE gui=NONE
 hi DiffChange ctermfg=245 ctermbg=NONE cterm=NONE guifg=#f5f5f5 guibg=#1f3453 gui=NONE
@@ -90,7 +116,6 @@ hi Float ctermfg=254 ctermbg=NONE cterm=NONE guifg=#e5e5e5 guibg=NONE gui=NONE
 "hi Function ctermfg=67 ctermbg=NONE cterm=bold guifg=#3592a8 guibg=NONE gui=bold
 let syntax.Function = copy(presets.function)
 
-hi Identifier ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Keyword ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Label ctermfg=149 ctermbg=234 cterm=NONE guifg=#add961 guibg=#1e1e1e gui=NONE
 hi NonText ctermfg=236 ctermbg=235 cterm=NONE guifg=#333333 guibg=#292929 gui=NONE
@@ -100,8 +125,6 @@ hi Operator ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NON
 hi PreProc ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f5f5f5 guibg=NONE gui=NONE
 hi SpecialKey ctermfg=236 ctermbg=236 cterm=NONE guifg=#333333 guibg=#333333 gui=NONE
-hi Statement ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
-let syntax.Statement = copy(presets.statement)
 
 "hi StorageClass ctermfg=168 ctermbg=NONE cterm=NONE guifg=#e84480 guibg=NONE gui=NONE
 let syntax.StorageClass = copy(presets.storage)
