@@ -56,11 +56,11 @@ let colors = {
       \'129': '#af00ff'
       \}
 
-hi elixirArguments ctermfg=206
+hi elixirArguments ctermfg=204
 hi elixirAtom ctermfg=99
 hi elixirBlock ctermfg=243
-hi elixirBlockDefinition ctermfg=99
-hi elixirDefine ctermfg=162
+hi elixirBlockDefinition ctermfg=204
+hi elixirDefine ctermfg=204
 hi elixirFunctionDeclaration ctermfg=33
 hi elixirId ctermfg=254
 hi elixirInclude ctermfg=99
@@ -72,9 +72,12 @@ hi elixirString ctermfg=155
 hi elixirVariable ctermfg=206
 hi Keyword ctermfg=206
 hi Define ctermfg=208
-hi elixirExUnitAssert ctermfg=160
+hi elixirExUnitAssert ctermfg=226
+hi elixirExUnitMacro ctermfg=226
 hi Identifier ctermfg=206
 hi Statement ctermfg=208
+
+"hi eblClass ctermfg=30
 
 
 hi Cursor ctermfg=234 ctermbg=67 cterm=NONE guifg=#1e1e1e guibg=#3592a8 gui=NONE
