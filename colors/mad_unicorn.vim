@@ -77,6 +77,11 @@ hi elixirExUnitMacro ctermfg=226
 hi Identifier ctermfg=206
 hi Statement ctermfg=208
 
+hi markdownH1 ctermfg=226 ctermbg=232 cterm=bold
+hi markdownH2 ctermfg=220 ctermbg=232 cterm=bold
+hi markdownH2Delimiter ctermfg=233
+hi markdownCode ctermfg=226
+
 "hi eblClass ctermfg=30
 
 
